@@ -1,0 +1,51 @@
+
+* {
+    font-family: 'Roboto Mono' !important;
+}
+
+.mdl-layout-title {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Roboto Mono', ;
+    padding-left: 20px !important;
+}
+
+.mdl-layout__drawer {
+    border-right: 0px;
+
+}
+
+.mdl-navigation > p {
+    font-size: 16px;
+}
+
+.mdl-navigation__link {
+    padding: 16px 20px !important;
+}
+
+.page-content {
+    margin: 0px 20%;
+}
+
+.match-table {
+    border: 0;
+    width: 100%;
+}
+
+.match-elem {
+    font-size: 15px;
+}
+
+.match-head {
+    font-size: 16px !important;
+}
+
+.mdl-textfield {
+    width: calc(100% - 40px);
+    margin: 0 16px;
+    margin-bottom: -10px;
+}
+
+#regex-input {
+    font-size: 20px;
+}

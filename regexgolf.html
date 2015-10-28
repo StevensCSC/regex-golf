@@ -1,0 +1,78 @@
+<html lang="en-US">
+  <head>
+    <!-- from local
+    <link rel="stylesheet" href="lib/material.cyan-amber.min.css" />
+    <script src="lib/material.min.js"></script>
+    <script src="lib/knockout-3.2.0.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    -->
+    <!-- from CDN -->
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.blue-red.min.css" />
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Roboto+Mono" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="regexgolf.css" />
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+      <div class="mdl-layout__drawer mdl-color--red-800">
+        <span class="mdl-layout-title mdl-color-text--white">Regex Golf</span>
+        <nav id="nav-challenges" class="mdl-navigation" data-bind="foreach: challenges">
+          <p class="mdl-navigation__link mdl-color-text--white" data-bind="click: $parent.goToChallenge">
+            <span data-bind="text: title"></span> (<span data-bind="text: score"></span>)
+          </p>
+        </nav>
+      </div>
+      <main class="mdl-layout__content mdl-color--grey-200">
+        <div class="page-content" data-bind="with: currentChallenge">
+          <div class="mdl-grid">
+            <div class="regex-input-panel mdl-cell mdl-color--white mdl-shadow--2dp mdl-cell--12-col">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text mdl-color-text--grey-600">Regular Expression:</h2>
+              </div>
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="regex-input" data-bind="textInput: input, value: inputValue"/>
+              </div>
+              <div class="mdl-card__supporting-text">
+                Score: <span data-bind="text: score">
+              </div>
+            </div>
+          </div>
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-color--white mdl-shadow--2dp mdl-cell--6-col">
+              <table class="match-table mdl-data-table mdl-js-data-table">
+                <thead>
+                  <tr>
+                    <th class="match-head mdl-data-table__cell--non-numeric">Match</th>
+                  </tr>
+                </thead>
+                <tbody id="do-match" data-bind="foreach: matchVM.match">
+                  <tr>
+                    <td class="match-elem mdl-data-table__cell--non-numeric" data-bind="html: display"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="mdl-cell mdl-color--white mdl-shadow--2dp mdl-cell--6-col">
+              <table class="match-table mdl-data-table mdl-js-data-table">
+                <thead>
+                  <tr>
+                    <th class="match-head mdl-data-table__cell--non-numeric">Don't Match</th>
+                  </tr>
+                </thead>
+                <tbody id="do-not-match" data-bind="foreach: unmatchVM.match">
+                  <tr>
+                    <td class="match-elem mdl-data-table__cell--non-numeric" data-bind="html: display"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+    <script src="regexgolf.js"></script>
+</html>
