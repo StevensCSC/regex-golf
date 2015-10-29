@@ -1,0 +1,197 @@
+[
+  {
+    "title": "Warmup",
+    "match": [
+      "incarnate",
+      "carpool",
+      "scare",
+      "discard",
+      "carbon",
+      "scarfs",
+      "carpet",
+      "carbohydrate"
+    ],
+    "unmatch": [
+      "chamomile",
+      "calisthenics",
+      "crazy",
+      "turtle",
+      "concatenate",
+      "curate",
+      "artist",
+      "curvature"
+    ]
+  },
+  {
+    "title": "Backtrack",
+    "match": [
+      "The painter painted a really nice painting",
+      "The painter painted a surreal painting",
+      "The painter painted a colored painting",
+      "The painter painted an unreal painting",
+      "The painter painted a relatively decent painting",
+      "The painter painted an oreo painting",
+      "The painter painted an incredible painting"
+    ],
+    "unmatch": [
+      "the painted painter paints a painting",
+      "paint",
+      "The painter paints a nice painting",
+      "The painter painted a superb painting",
+      "The painter painted paintings",
+      "The painter painted a oreo painting",
+      "The painter paints an incredible painting"
+    ]
+  },
+  {
+    "title": "Articles and Vowels",
+    "match": [
+      "The man did a jig",
+      "An apple would be nice",
+      "Perhaps a banana would be even better",
+      "This regular expression is a tough one!",
+      "The winner of this competition will receive an award"
+    ],
+    "unmatch": [
+      "My words are separated by spaces",
+      "The Computer Science Club is a awesome club",
+      "Don't match an single one of these sentences",
+      "English is a interesting language",
+      "Also it is difficult one a"
+    ]
+  },
+  {
+    "title": "Dates",
+    "match": [
+      "October 28, 2015",
+      "July 5, 2015",
+      "December 1, 2014",
+      "May 31, 1989",
+      "February 31, 2015"
+    ],
+    "unmatch": [
+      "lanarius 24, -44",
+      "January 32, 2015",
+      "March 01, 2015",
+      "April 0, 2015",
+      "June 1, 0"
+    ]
+  },
+  {
+    "title": "Binary",
+    "match": [
+      "0001,0010,0011,0100,0101,0110,0111,1000,1001"
+    ],
+    "unmatch": [
+      "0001,0010,0011,1100,1111,0110,0110,1000,1001",
+      "0000,0010,0011,1100,1011,0110,0110,1000,1001",
+      "0001,0010,0311,1100,1111,0110,0110,1000,1001",
+      "0001,0011,0011,1100,1111,0110,0110,1000,1001",
+      "0001,0010,0011,,1111,0110,0110,1000,1001",
+      "0001,0010,0011,0100,0101,0110,0111,1000,1000"
+    ]
+  },
+  {
+    "title": "Contains",
+    "match": [
+      "carpet",
+      "tarmac",
+      "hatch",
+      "tacky",
+      "capital",
+      "create"
+    ],
+    "unmatch": [
+      "carpool",
+      "thermal",
+      "hitch",
+      "tickle",
+      "capillary",
+      "cream"
+    ]
+  },
+  {
+    "title": "Binary Expansion",
+    "match": [
+      "(2*(2*(2*(1)+1))+1)",
+      "2*(2*(2*(1)+1))+1",
+      "(2*(2*(2*(1))))",
+      "(2*(2*(2*(1)+1)+1)+1)",
+      "1"
+    ],
+    "unmatch": [
+      "(2*2*2*1+1+1)",
+      "2*(2*(2*(0)+1))+1",
+      "(2*(2*(2*1)))",
+      "(2*(2*(2*(1)+0)+1)+1)+1",
+      "2"
+    ]
+  },
+  {
+    "title": "Prime",
+    "match": [
+      "xx",
+      "xxx",
+      "xxxxx",
+      "xxxxxxx",
+      "xxxxxxxxxxx",
+      "xxxxxxxxxxxxx",
+      "xxxxxxxxxxxxxxxxx"
+    ],
+    "unmatch": [
+      "xxxx",
+      "xxxxxx",
+      "xxxxxxxx",
+      "xxxxxxxxx",
+      "xxxxxxxxxx",
+      "xxxxxxxxxxxx",
+      "xxxxxxxxxxxxxx"
+    ]
+  },
+  {
+    "title": "Capitals",
+    "match": [
+      "Montgomery",
+      "Juneau",
+      "Phoenix",
+      "Little Rock",
+      "Sacramento",
+      "Denver",
+      "Hartford",
+      "Dover"
+    ],
+    "unmatch": [
+      "Las Vegas",
+      "New York",
+      "Chicago",
+      "San Diego",
+      "Houston",
+      "Miami",
+      "Seattle",
+      "Cleveland"
+    ]
+  },
+  {
+    "title": "Cats and Dogs",
+    "match": [
+      "Eupleridae",
+      "Felidae",
+      "Herpestidae",
+      "Hyaenidae",
+      "Nandiniidae",
+      "Prionodontidae",
+      "Viverridae",
+      "Barbourofelidae"
+    ],
+    "unmatch": [
+      "Canidae",
+      "Amphicyonidae",
+      "Ursidae",
+      "Hemicyonidae",
+      "Ailuridae",
+      "Mephitidae",
+      "Mustelidae",
+      "Procyonidae"
+    ]
+  }
+]
